@@ -9,9 +9,6 @@ app.set('puerto',process.env.PORT || 3001);
 
 app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`));
 
-
-app.listen(app.get('puerto'), ()=>console.log('servidor escuchando en puerto'))
-
 app.get("/", (req, res) =>{
     res.sendFile(path.join(__dirname, "./views/home.html"));
 })
