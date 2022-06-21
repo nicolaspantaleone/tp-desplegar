@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+}
+.logo{
+    width: 200px;
+    margin-left: 10px;
+}
+.compra-head{
+    align-items: flex-end;
+    margin-right: 2%;
+}
+.main-navbar ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-around;
+    width: 75%;
+    color: #000;
+}
+.imagen-header{
+    height: 100%;
+    width: 100%;
+}
+.buscador{
+    margin: 10px;
+    align-items: center;
+}
+.burger-menu{
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    color: #ebebeb;
+    background: #03264C;
+    border-radius: 20%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+main{
+    background-color: #ebebeb;
+    margin: 0 auto;
+    height: 15em;
+    padding: 0.7em;
+}
+main form input{
+    width: 25%;
+    margin-top: 1%;
+    display: flex;
+    text-align: left;
+    padding: 0.5em;
+    border: none;
+    margin-left: 35%;
+}
+.submit{
+    width: 25%;
+    margin-top: 1%;
+    text-align: center;
+    padding: 0.5em 2em;
+    color: white;
+    display: flex;
+    font-size: 1em;
+    background-color: #1472ff;
+    margin-left: 35%;
+    transition-duration: 500ms;
+    text-decoration: none;
+}
+.submit:hover{
+    background-color: #0022AA;
+    color: #FFF;
+}
+
+.titulo-main{
+    font-size: 24px;
+    color: #666;
+    margin-left: 4%;
+}
+
+
+
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount, .description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3, .description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main article img{
+    width: 100%;
+}
+
+main article i, .discount{
+    color: #39b54a;
+}
+
+main article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+
+footer{
+    background-color: #ffffff;
+    margin: 10px;
+}
+.icono-footer{
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.titulos-footer{
+    text-align: center;
+}
+.texto{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+@media (min-width: 361px){
+
+    .main-navbar{
+        display: none;
+    }
+    .header-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-box .logo{
+        width: 50%;
+     }
+     .header-box .buscador{
+        width: 45%;
+        border-radius: 25%;
+     }
+
+     main article .description{
+        display: none;
+    }
+
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .price, .discount{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 769px){
+    main div.products article{
+        width: 47%;
+        margin: 1% 1.5%;
+    }
+    main article .description{
+        display: block;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .header-box{
+        justify-content: space-between;
+    }
+    .header-box .logo{
+        width: 20%;
+    }
+    .header-box .buscador{
+        width: 25%;
+     }
+}
+
+@media (min-width: 1279px){
+    main div.products article{
+        width: 22%;
+    }
+    main article .description{
+        display: block;
+    }
+}
